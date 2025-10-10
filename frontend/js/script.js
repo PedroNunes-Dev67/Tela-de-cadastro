@@ -22,9 +22,12 @@ form.addEventListener("submit", async (e) => {
     try{
         resp.innerText='Carregando...'
         await axios.post('http://localhost:8080/cadastro/novoUsuario', novoUsuario)
-            .then(response => console.log(response.data))
+            .then(response => console.log(response.data));
+        resp.innerText='Usuário cadastrado com sucesso!';
+        resp.style.color='green';
     }
     catch(Error){
         resp.innerText = 'Erro ao cadastrar usuario!';
+        resp.style.color='red';
     }
 });
