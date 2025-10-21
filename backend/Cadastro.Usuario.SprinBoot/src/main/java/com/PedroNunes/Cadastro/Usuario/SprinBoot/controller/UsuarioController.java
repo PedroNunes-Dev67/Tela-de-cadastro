@@ -26,7 +26,7 @@ public class UsuarioController {
         Usuario novoUsuario = usuarioService.cadastarUsuario(usuario);
 
         if(novoUsuario == null){
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(usuario);
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(usuario);
         }
         else{
             return ResponseEntity.status(HttpStatus.CREATED).body(novoUsuario);
