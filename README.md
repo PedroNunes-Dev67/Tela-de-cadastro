@@ -1,2 +1,7 @@
 # Tela de Cadastro Fullstack
-### Java - MySql - Html - Css - Javascript
+## 💻 Tecnologias utilizadas: 
+- **JAVA** ☕
+- **MYSQL** 🐬
+- **HTML** </>
+- **CSS** 🎨
+- **JAVASCRIPT** ｡🇯‌🇸‌
