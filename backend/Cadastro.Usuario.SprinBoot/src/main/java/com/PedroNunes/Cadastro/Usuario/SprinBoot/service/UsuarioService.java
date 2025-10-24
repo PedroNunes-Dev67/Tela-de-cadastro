@@ -18,10 +18,10 @@ public class UsuarioService {
 
     public Usuario cadastarUsuario(Usuario usuario){
 
-        if(usuario.getEmail() == null){
+        if(usuario.getEmail() == null){        //Verifica se o email que foi passado para verificação passou!
             return null;
         }
-        else if(usuarioRepository.findByEmail(usuario.getEmail()).isPresent()){   //Verifica se o email que foi passado para verificação passou!
+        else if(usuarioRepository.findByEmail(usuario.getEmail()).isPresent()){
             return null;
         }
         else{

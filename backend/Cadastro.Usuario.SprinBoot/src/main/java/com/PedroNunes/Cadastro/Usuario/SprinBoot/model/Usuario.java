@@ -42,12 +42,7 @@ public class Usuario {
     public void setEmail(String email) {
         this.validarEmail = new EmailVerificacao(email);   //Obtem o email e verifica se é válido!
 
-        if (validarEmail != null){
-            this.email = validarEmail.getEmailValidacao();   //Caso seja válido, atribui diretamente ao email da classe!
-        }
-        else{
-            this.email = null;
-        }
+        this.email = validarEmail.getEmailValidacao();
     }
 
     public String getSenha() {
