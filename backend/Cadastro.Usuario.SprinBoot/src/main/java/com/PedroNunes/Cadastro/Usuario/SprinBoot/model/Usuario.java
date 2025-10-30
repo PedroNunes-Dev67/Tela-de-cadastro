@@ -3,11 +3,12 @@ package com.PedroNunes.Cadastro.Usuario.SprinBoot.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "usuarios")
+@Table(name = "usuario")
 public class Usuario {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name = "id_usuario")
     private long id;
     @Column(name="nome", nullable=false)
     private String nome;
